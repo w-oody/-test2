@@ -10,7 +10,9 @@ name: Python application
 #     branches: [ "master" ]
 on:
    issues:
-    types: [opened, edited, milestoned]
+      types: [opened, edited, milestoned]
+   check_run:
+      types: [rerequested, completed]
    schedule:
       - cron: '*/5 * * * *' # UST 가 default. UST 22:55는 한국시간 07:55
 
