@@ -9,6 +9,8 @@ name: Python application
 #   pull_request:
 #     branches: [ "master" ]
 on:
+   issues:
+      types: [opened, edited]
    schedule:
      - cron: '*/5 * * * *' # UST 가 default. UST 22:55는 한국시간 07:55
 
