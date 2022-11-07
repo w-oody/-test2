@@ -10,7 +10,7 @@ name: Python application
 #     branches: [ "master" ]
 on:
    schedule:
-     - cron: '*/10 * * * *' # UST 가 default. UST 22:55는 한국시간 07:55
+     - cron: '*/5 * * * *' # UST 가 default. UST 22:55는 한국시간 07:55
 
 # permissions:
 #   contents: read
