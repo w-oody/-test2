@@ -14,7 +14,7 @@ on:
 #    check_run:
 #       types: [rerequested, completed]
    schedule:
-      - cron: '0/10 * * * *' # UST 가 default. UST 22:55는 한국시간 07:55
+      - cron: '*/10 * * * *' # UST 가 default. UST 22:55는 한국시간 07:55
 
 # permissions:
 #   contents: read
@@ -30,7 +30,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python 3.9
+    - name: Set up Python
       uses: actions/setup-python@v2
       with:
         python-version: 3.9
