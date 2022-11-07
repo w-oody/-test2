@@ -11,10 +11,10 @@ name: Python application
 on:
    issues:
       types: [opened, edited, milestoned]
-   check_run:
-      types: [rerequested, completed]
+#    check_run:
+#       types: [rerequested, completed]
    schedule:
-      - cron: '*/5 * * * *' # UST 가 default. UST 22:55는 한국시간 07:55
+      - cron: '0/10 * * * *' # UST 가 default. UST 22:55는 한국시간 07:55
 
 # permissions:
 #   contents: read
